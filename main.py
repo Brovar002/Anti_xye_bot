@@ -60,7 +60,7 @@ def handle_text(message):
             message.text = re.sub(r'ебануться|Ебануться|ебанутся|Ебанутся|ёбнуться|Ёбнуться|ёбнутся|Ёбнутся', random.choice(synonym.ebanutsya), message.text, 1)
             message.text = re.sub(r'ебанулся|Ебанулся|ёбнулся|Ёбнулся', random.choice(synonym.ebnulsya), message.text, 1)
             message.text = re.sub(r'ебанулась|Ебанулась|ёбнулась|Ёбнулась', random.choice(synonym.ebnulas), message.text, 1)
-            message.text = re.sub(r'охуенный|Охуенный|охуеный|Охуеный|ахуенный|Ахуенный|ахуеный|Ахуеный|пиздатый|Пиздатый', random.choice(synonym.ohueniy, message.text, 1))
+            message.text = re.sub(r'охуенный|Охуенный|охуеный|Охуеный|ахуенный|Ахуенный|ахуеный|Ахуеный|пиздатый|Пиздатый', random.choice(synonym.ohueniy), message.text, 1)
             s += e[1]
         bot.send_message(cid, message.text)
 
